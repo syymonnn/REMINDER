@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg0: #07070A;
+  --bg1: rgba(255,255,255,0.06);
+  --stroke: rgba(255,255,255,0.10);
+  --stroke2: rgba(255,255,255,0.14);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.62);
+  --muted2: rgba(255,255,255,0.45);
+  --lime: #B8FF2C;
+  --violet: #8B5CF6;
+  --cyan: #22D3EE;
+  --amber: #FBBF24;
+  --radius: 14px;
+}
+
+html, body{
+  height: 100%;
+  background: var(--bg0);
+  color: var(--text);
+}
+
+*{ box-sizing: border-box; }
+
+.sy-card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  backdrop-filter: blur(22px) saturate(1.05);
+  -webkit-backdrop-filter: blur(22px) saturate(1.05);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.45);
+}
+
+.sy-panel{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: var(--radius);
+  backdrop-filter: blur(28px) saturate(1.05);
+  -webkit-backdrop-filter: blur(28px) saturate(1.05);
+  box-shadow: 0 10px 36px rgba(2,6,23,0.50);
+}
+
+.sy-input{
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.sy-input:focus{
+  border-color: rgba(184,255,44,0.45);
+  box-shadow: 0 0 0 4px rgba(184,255,44,0.12);
+}
+
+.sy-btn{
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.sy-btn:hover{
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.16);
+}
+
+.sy-btn-primary{
+  border: 1px solid rgba(184,255,44,0.35);
+  background: rgba(184,255,44,0.14);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.sy-btn-primary:hover{
+  background: rgba(184,255,44,0.18);
+  border-color: rgba(184,255,44,0.45);
+}
+
+.sy-pill{
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.82);
+}
+
+.sy-pill-active{
+  border-color: rgba(184,255,44,0.40);
+  background: rgba(184,255,44,0.12);
+  color: rgba(255,255,255,0.92);
+}
+
+.sy-hairline{
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+}
+
+::selection{
+  background: rgba(184,255,44,0.25);
+}
+
